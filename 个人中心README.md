@@ -53,6 +53,7 @@ public class AppPatientDemoContexts extends AppHttpContexts {
     @Override
     public void onCreate() {
         super.onCreate();
+        AppUIContexts.getAppContext().setUserLoginActivity(UserLoginActivity.class);
         AppUIContexts.getAppContext().setUserCenterActivity(UserCenterActivity.class);
     }
  ｝
