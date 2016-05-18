@@ -10,6 +10,16 @@ public class AppPatientDemoContexts extends AppHttpContexts {
         super.onCreate();
         initUrl("http://192.168.0.12:8080/api/exec/3fba2d7e-6a59-492d-a6d1-b56538ccedf4.htm", true);
     }
+    
+      @Override
+    public RequestFail getRequestFail() {
+        return new RequestFail() {
+            @Override
+            public void fail(boolean isFinish, Activity activity, int code, String... messages) {
+                Toaster.show(activity, messages[0]);//交互失败异常处理
+            }
+        };
+    }
  ｝
 ```
 
