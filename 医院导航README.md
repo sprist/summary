@@ -38,6 +38,7 @@ public class AppPatientDemoContexts extends AppHttpContexts {
     @Override
     public void onCreate() {
         super.onCreate();
+        SDKInitializer.initialize(getApplicationContext());
         AppUIContexts.getAppContext().setHospitalMainActivity(HospitalNavigationActivity.class);
     }
  ｝
