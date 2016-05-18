@@ -104,6 +104,12 @@
             android:configChanges="keyboardHidden|screenLayout"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+            
+          <activity
+            android:name="com.rubik.ucmed.rubikencyclopedia.EncyclopdiaWapActivity"
+            android:configChanges="keyboardHidden|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
   ```
 
 2、Application配置
