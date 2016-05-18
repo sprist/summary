@@ -12,8 +12,15 @@ public class AppPatientDemoContexts extends AppHttpContexts {
     }
   }
 ```
+2、AndroidManifest.xml配置
 
-2、DynamicFunctionUtils方法
+```java
+        <service
+            android:name="com.rubik.ucemd.dynamicfunction.service.HomeItemService"
+            android:exported="false" />
+```
+
+3、DynamicFunctionUtils方法
 
 ```java
 DynamicFunctionUtils.initHomeItems(Context context);//后台交互获取首页动态模块数据
@@ -25,7 +32,7 @@ DynamicFunctionUtils.getUserItems();//获取个人中心动态模块
 DynamicFunctionUtils.getFunctionStyle();//获取软件默认风格
 ```
 
-3、DynamicIntentUtils方法
+4、DynamicIntentUtils方法
 
 ```java
 DynamicIntentUtils.functionIntent(Context context, ListItemFunction item);// 功能跳转
