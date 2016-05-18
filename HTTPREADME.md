@@ -1,8 +1,22 @@
 #HTTP
 
-1、Activity继承BaseLoadingActivity<T>类
+1、Application配置
 
-2、请求类
+```java
+public class AppPatientDemoContexts extends AppHttpContexts {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        initUrl("http://192.168.0.12:8080/api/exec/3fba2d7e-6a59-492d-a6d1-b56538ccedf4.htm", true);
+    }
+ ｝
+```
+
+
+2、Activity继承BaseLoadingActivity<T>类
+
+3、请求类
 
 ```java
   new RequestBuilder(this);//请求返回model
@@ -10,7 +24,7 @@
   new RequestFileBuilder(this);//上传文件
 ```
 
-3、请求返回model更多配置
+4、请求返回model更多配置
 
 ```java
 .api(String api)//配置api名字
@@ -42,7 +56,7 @@
             }).requestIndex();
 ```
 
-4、请求返回列表更多配置
+5、请求返回列表更多配置
 
 ```java
 .api(String api)//配置api名字
@@ -77,7 +91,7 @@
                     }) .requestIndex();
 ```
 
-5、上传文件
+6、上传文件
 
 ```java
 .api(String api)//配置api名字
