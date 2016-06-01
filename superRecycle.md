@@ -51,7 +51,8 @@ dependencies {
     style="@style/RecyclerView"
     app:layout_empty="@layout/layout_http_data_empty"
     app:layout_moreProgress="@layout/layout_ui_recycle_foot" />
-    ```
+
+```
 
 -  第2个增加了header跟footer可以自定义
 
@@ -62,7 +63,8 @@ dependencies {
     style="@style/RecyclerView"
     app:layout_empty="@layout/layout_http_data_empty"
     app:layout_moreProgress="@layout/layout_ui_recycle_foot" />
-    ```
+
+```
 
 2.相关属性支持
 --------
@@ -86,6 +88,7 @@ dependencies {
             <flag name="outsideInset" value="0x03000000" />
         </attr>
         <attr name="mainLayoutId" format="reference" />
+        
 ```
 
 3.adapter方法实现类
@@ -107,6 +110,7 @@ public abstract class RecyclerAdapter<T> extends BaseRecyclerAdapter<T, Recycler
     }
 
 }
+
 ```
 - 自定义添加filter
 
@@ -167,4 +171,5 @@ public abstract class RecyclerFilterAdapter<T> extends BaseRecyclerAdapter<T, Re
             }
         };
         rclv.setAdapter(adapter);
-        ```
+
+ ```
