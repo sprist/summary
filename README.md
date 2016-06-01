@@ -42,3 +42,5 @@
 
 5、adapter：https://github.com/sprist/adapter
 
+5、superRecycler：https://github.com/sprist/adapter
+
